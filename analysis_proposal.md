@@ -17,7 +17,7 @@ The process of analysis is described as following. First, short Illumina reads f
 By isolating SNPs \( and then SVs\) in different functional regions, we can calculate the pi, theta-w, Tajima's D and mutation rate. These values are calculated right at the sites and in both upstream plus down streams by sliding windows of 5 kbp with 1 kbp increment. The statistics across the genome is also calculated by the sliding wndow method. To visualize our results, **ggPlot2** is the main package to draw line graphs, bar charts and box plots. The statistics across a certain region are presented as line graphs. To compare the distributions, box plots representing the value of each group are created. The site frequency spectrum can be extracted from vcf files with **vcftools** and **bcftools**. With different input, we can generate the site frequency spectrum in different regions or conditioned by different Tajima's D range. A special package AlleleShift can also be used to draw site frequency spectrum.  
 
 ### Conclusion
-There are many similar graphs in research articles (Daniel K Fabian et al., 2012, Mol Ecol; Stefano Mona et al., 2010, BMC Evolutionary Biology) so we can take their graphs and methods as references. With current scripts, we are able to process the sequences and will spend some time on visualization. After visualizing our data, we can compare the distribution and trends of population statistics under different conditions. Statistical tests, such as X^2^ test and linear regression, may help. Besides, we can understand how the SNPs influence the selection and  population statistics in neighboring regions. When the pipelines is sophiscated, similar analysis will be conducted for structural variations.
+There are many similar graphs in research articles (Daniel K Fabian et al., 2012, Mol Ecol; Stefano Mona et al., 2010, BMC Evolutionary Biology) so we can take their graphs and methods as references. With current scripts, we are able to process the sequences and will spend some time on visualization. After visualizing our data, we can compare the distribution and trends of population statistics under different conditions. Statistical tests, such as &Chi;<sup>2</sup> test and linear regression, may help. Besides, we can understand how the SNPs influence the selection and  population statistics in neighboring regions. When the pipelines is sophiscated, similar analysis will be conducted for structural variations.
 
 
 ---------------------
@@ -26,9 +26,9 @@ There are many similar graphs in research articles (Daniel K Fabian et al., 2012
 
 | purpose | names of softwares and packages |
 |--------|----------|
-| genome mapping| bwa aln/sampe, minimap2|
-| SNP calling & annotation| GATK, Freebayes, SnpEff|
-| SV calling & annotation| SVMU, CNVnator, nanotatoR, AnnotSV|
-| population statistics| Egglib-3, Arlequin-3.5, poppr in R, vcf2sfs in R|
-| Visualization | ggPlot2 in R, AlleleShift in R|
-| miscellineous| vcf2bed of BEDOPS ,histlib, vcftools, bcftools, vcffilter, bedtools|
+| genome mapping| bwa aln/sampe, minimap2 |
+| SNP calling & annotation| GATK, Freebayes, SnpEff |
+| SV calling & annotation| SVMU, CNVnator, nanotatoR, AnnotSV |
+| population statistics| Egglib-3, Arlequin-3.5, poppr in R, vcf2sfs in R |
+| Visualization | ggPlot2 in R, AlleleShift in R |
+| miscelleneous | vcf2bed of BEDOPS, histlib, vcftools, bcftools, vcffilter, bedtools |
